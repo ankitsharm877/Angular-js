@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+   <my-d></my-d> 
+
+</div>
+<script>
+ var app = angular.module("myApp", []);
+ app.directive("myD", function(){
+    return {
+        restrict: "E",
+        template: "<h1>Heading</h1>"
+    };
+ });
+</script>
+</body>
+</html>

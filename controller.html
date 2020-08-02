@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+    Name: <input type="text" ng-model="name">
+    Name: {{getName()}}
+</div>
+<script>
+var app = angular.module("myApp",[]);
+app.controller("myCtrl", function($scope){
+    $scope.name = "Ankit Sharma";
+    $scope.getName = function(){
+        return $scope.name
+    }
+});
+</script>
+</body>
+</html>

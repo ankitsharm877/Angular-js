@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="">
+<form>
+    <input type="text" ng-model="name"><br>
+    <input type="checkbox" ng-model="check"><br>
+    Pick a topic:
+    <input type="radio" ng-model="radioM" value="dogs">Dogs
+    <input type="radio" ng-model="radioM" value="tuts">Tutorials
+    <input type="radio" ng-model="radioM" value="cars">Cars
+    <br>
+    <select ng-model="selectM">
+        <option value="">
+        <option value="dogs">Dogs
+        <option value="tuts">Tutorials
+        <option value="cars">Cars
+      </select>
+</form>
+<p>Name:{{name}}</p>
+<p ng-show="check">Paragraph</p>
+<p>{{radioM}}</p>
+<p>{{selectM}}</p>
+</div>
+</body>
+</html>
